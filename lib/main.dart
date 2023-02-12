@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weptoon_app/screens/home_screen.dart';
-import 'package:weptoon_app/services/api_service.dart';
 
 void main() {
-  ApiService().getTodayToons();
-  ApiService().test();
   runApp(const App());
 }
 
@@ -14,7 +11,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: HomeScreen(),
     );
   }
