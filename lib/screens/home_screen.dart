@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         foregroundColor: Colors.green,
         title: const Text(
-          "어늘의 웹툰",
+          "네이버 웹툰",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w400,
@@ -55,8 +55,8 @@ class HomeScreen extends StatelessWidget {
         horizontal: 20,
       ),
       itemBuilder: (context, index) {
-        print(index);
         var webtoon = snapshot.data![index];
+
         return Webtoon(
           title: webtoon.title,
           thumb: webtoon.thumb,
